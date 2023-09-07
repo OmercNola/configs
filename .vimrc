@@ -33,7 +33,7 @@ set expandtab
 set hls
 hi search ctermbg=lightblue 
 hi search ctermfg=black 
-set colorcolumn=79
+" set colorcolumn=79
 inoremap kj <Esc>
 nmap <esc><esc> :noh<return><esc>
 nmap <C-u> <C-u>zz
@@ -44,3 +44,4 @@ augroup yaml_fix
     autocmd!
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
 augroup END
+colo default
