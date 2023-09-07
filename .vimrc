@@ -30,9 +30,6 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set hls
-hi search ctermbg=lightblue 
-hi search ctermfg=black 
 " set colorcolumn=79
 inoremap kj <Esc>
 nmap <esc><esc> :noh<return><esc>
@@ -45,3 +42,6 @@ augroup yaml_fix
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
 augroup END
 colo default
+set hls
+hi search ctermbg=lightblue 
+hi search ctermfg=black 
