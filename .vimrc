@@ -2,17 +2,17 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-" " alternatively, pass a path where Vundle should install plugins
-" "call vundle#begin('~/some/path/here')
-" 
-" " let Vundle manage Vundle, required
-" Plugin 'VundleVim/Vundle.vim'
-" Plugin 'NLKNguyen/papercolor-theme'
-" Plugin 'valloric/youcompleteme'
-" 
-" call vundle#end()            " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'valloric/youcompleteme'
+
+call vundle#end()            " required
 filetype plugin indent on    " required
 
 " :PluginList       - lists configured plugins
@@ -24,13 +24,18 @@ set number relativenumber
 syntax on
 set t_Co=256
 set background=dark
-" colorscheme PaperColor
+colorscheme PaperColor
 filetype plugin indent on
 set autoindent 
 set tabstop=4
 set shiftwidth=4
 set expandtab
-" set colorcolumn=79
+set noswapfile
+set hls
+set ls=2
+hi search ctermbg=lightblue 
+hi search ctermfg=black 
+set colorcolumn=79
 inoremap kj <Esc>
 nmap <esc><esc> :noh<return><esc>
 nmap <C-u> <C-u>zz
@@ -41,7 +46,3 @@ augroup yaml_fix
     autocmd!
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
 augroup END
-colo default
-set hls
-hi search ctermbg=lightblue 
-hi search ctermfg=black 
