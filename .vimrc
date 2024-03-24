@@ -31,6 +31,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set noswapfile
+set encoding=utf-8
 set hls
 set ls=2
 hi search ctermbg=lightblue 
@@ -40,6 +41,9 @@ inoremap kj <Esc>
 nmap <esc><esc> :noh<return><esc>
 nmap <C-u> <C-u>zz
 nmap <C-d> <C-d>zz
+nmap # # zz
+nmap * * zz
+nmap n n zz
 
 " Fix auto-indentation for YAML files
 augroup yaml_fix
