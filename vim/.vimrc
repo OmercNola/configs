@@ -12,7 +12,7 @@ set number relativenumber
 syntax on
 set t_Co=256
 set background=dark
-colorscheme PaperColor
+" colorscheme PaperColor
 filetype plugin indent on
 set autoindent 
 set tabstop=4
