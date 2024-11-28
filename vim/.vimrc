@@ -12,7 +12,6 @@ set number relativenumber
 syntax on
 set t_Co=256
 set background=dark
-" colorscheme PaperColor
 filetype plugin indent on
 set autoindent 
 set tabstop=4
@@ -25,7 +24,7 @@ set ls=2
 hi search ctermbg=lightblue 
 hi search ctermfg=black 
 set colorcolumn=80
-highlight ColorColumn ctermbg=darkgray
+
 inoremap kj <Esc>
 nmap <esc><esc> :noh<return><esc>
 nmap <C-u> <C-u>zz
@@ -39,3 +38,5 @@ augroup yaml_fix
     autocmd!
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
 augroup END
+colorscheme default
+highlight ColorColumn ctermbg=darkgray
